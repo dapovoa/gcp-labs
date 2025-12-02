@@ -5,6 +5,8 @@
 ![GCP](https://img.shields.io/badge/platform-Google%20Cloud-4285F4.svg)
 ![Labs](https://img.shields.io/badge/labs-5-orange.svg)
 
+![Google Cloud Labs Screenshot](img/screenshot.png)
+
 Automation scripts for Google Cloud Skills Boost Challenge Labs.
 
 ## Overview
@@ -33,25 +35,25 @@ Pick whichever method works for you:
 
 **Clone and Run Locally**
 ```bash
-git clone https://github.com/dapovoa/google-cloud-labs.git
-cd google-cloud-labs/gsp327
+git clone https://github.com/dapovoa/gcp-labs.git
+cd gcp-labs/gsp327
 bash solution.sh
 ```
 
 **Quick One-Liner**
 ```bash
-curl -L https://raw.githubusercontent.com/dapovoa/google-cloud-labs/main/gsp327/solution.sh -o solution.sh && chmod +x solution.sh && ./solution.sh
+curl -L https://raw.githubusercontent.com/dapovoa/gcp-labs/main/gsp327/solution.sh -o solution.sh && chmod +x solution.sh && ./solution.sh
 ```
 
 **Run Without Saving**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dapovoa/google-cloud-labs/main/gsp327/solution.sh)
+bash <(curl -s https://raw.githubusercontent.com/dapovoa/gcp-labs/main/gsp327/solution.sh)
 ```
 
 ## Repository Structure
 
 ```
-google-cloud-labs/
+gcp-labs/
   gsp327/
     README.md
     solution.sh
