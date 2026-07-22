@@ -11,7 +11,11 @@ Automation scripts for Google Cloud Skills Boost Challenge Labs.
 
 ## Overview
 
-Automation scripts for Google Cloud Skills Boost Challenge Labs. Each script prompts for the lab-specific variables, validates input, and executes the required gcloud commands in sequence. The goal is to reduce repetitive setup work while keeping the process transparent.
+Automation scripts for Google Cloud Skills Boost Challenge Labs. Each script
+prompts for the lab-specific variables, validates input, and executes the
+required `gcloud` commands in sequence. The goal is to reduce repetitive
+setup work while keeping the process transparent — read the code before
+running it.
 
 Every script follows the same pattern:
 1. Prompt for lab variables (with validation)
@@ -71,36 +75,26 @@ gcp-labs/
     solution.sh
 ```
 
-## Before You Run Anything
+## Prerequisites
 
-Make sure you have:
-- An active GCP project (obviously)
+- An active GCP project
 - gcloud CLI installed and authenticated
-- The right IAM permissions for whatever resources the lab creates
-- The lab instructions open so you can grab the variable names
-
-The scripts will tell you if APIs need to be enabled. Some will do it automatically, others will prompt you.
-
-## Features
-
-All scripts follow the same pattern: standardized input prompts, task progress tracking, verbose logging, and input validation. Once you've used one, you know how they all work.
+- IAM permissions for the resources the lab creates
+- Lab instructions open (for the required variable values)
 
 ## Tech Stack
 
-The scripts use standard GCP services:
-- BigQuery and BigQuery ML for data and machine learning labs
-- GKE for container and security labs
-- Cloud Monitoring and Logging for observability
-- Terraform for infrastructure as code
-- Standard bash scripting, nothing fancy
+- BigQuery / BigQuery ML
+- GKE
+- Cloud Monitoring / Logging
+- Terraform
+- Bash
 
-## Fair Warning
+## Cost and Cleanup
 
-These scripts create real GCP resources. That means:
-- You might incur costs (usually minimal for lab environments)
-- Resources will exist in your project until you clean them up
-- Always review what's being created before you run anything
-- These are for learning, not production use
+These scripts create real GCP resources. Review what each script does before
+running it, and clean up resources after completing the lab to avoid
+unexpected costs. These scripts are intended for learning, not production use.
 
 ## License
 
